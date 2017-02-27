@@ -2,6 +2,9 @@ name:          slaskell
 version:       0.0.0
 cabal-version: >= 1.8
 build-type:    Simple
+Data-Files:
+  index.html 
+  style.css 
 
 executable          slaskell
     hs-source-dirs: .
@@ -19,3 +22,4 @@ executable          slaskell
                   , text
                   , transformers
                   , wreq
+
