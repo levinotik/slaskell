@@ -60,6 +60,8 @@ resultHtml :: Text -> Response -> H.Html
 resultHtml emailAddress result = H.docTypeHtml $ do
   H.head $ do
     H.title title
+    H.meta ! A.charset "UTF-8"
+    H.meta ! A.name "viewport" ! A.content "width=device-width, initial-scale=1"
     H.link ! A.href "style.css" ! A.rel "stylesheet"
   H.body $ do
     H.div ! A.class_ "splash" $ do
