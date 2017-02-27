@@ -39,6 +39,7 @@ main = do
 scottyMain :: Token -> IO ()
 scottyMain token = scotty 3000 $ do
 
+  get "/health" $ text "ok"
   get "/" $ file "index.html"
   get "/style.css" $ file "style.css"
 
